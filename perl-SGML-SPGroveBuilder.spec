@@ -1,11 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	SGML
 %define	pnam	SPGroveBuilder
-%include	/usr/lib/rpm/macros.perl
 Summary:	SGML-SPGroveBuilder perl module
 Summary(pl):	Modu³ perla SGML-SPGroveBuilder
 Name:		perl-SGML-SPGroveBuilder
 Version:	2.01
-Release:	5
+Release:	6
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +25,7 @@ aby wczytywaæ instancje dokumentów SGML, XML i HTML do obiektów
 SGML::Grove.
 
 %prep
-%setup -q -n SGML-SPGroveBuilder-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch0 -p1
 %patch1 -p1
 
