@@ -24,6 +24,7 @@ Release:	9
 License:	BSD-like
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	5ecd47bf15af12b868c8260f21cd93cf
 Patch0:		%{name}-opensp.patch
 Patch1:		%{name}-perl-5.6.patch
 BuildRequires:	gcc-c++
