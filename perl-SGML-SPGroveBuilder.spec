@@ -5,14 +5,14 @@ Summary:	SGML-SPGroveBuilder perl module
 Summary(pl):	Modu³ perla SGML-SPGroveBuilder
 Name:		perl-SGML-SPGroveBuilder
 Version:	2.01
-Release:	6
+Release:	7
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-opensp.patch
 Patch1:		%{name}-perl-5.6.patch
 BuildRequires:	perl-devel >= 5.6.1
-BuildRequires:	opensp-devel
+BuildRequires:	opensp-devel >= 1.5pre5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
