@@ -28,7 +28,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 Patch0:		%{name}-opensp.patch
 Patch1:		%{name}-perl-5.6.patch
 BuildRequires:	perl-devel >= 5.6.1
-BuildRequires:	opensp-devel >= 1.5pre5
+BuildRequires:	opensp-devel >= 1.5.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
