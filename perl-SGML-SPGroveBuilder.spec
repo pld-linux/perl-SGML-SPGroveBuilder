@@ -5,8 +5,7 @@ Summary:	SGML-SPGroveBuilder perl module
 Summary(pl):	Modu³ perla SGML-SPGroveBuilder
 Name:		perl-SGML-SPGroveBuilder
 Version:	2.01
-Release:	4
-
+Release:	5
 License:	distributable
 Group:		Development/Languages/Perl
 Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
