@@ -3,7 +3,7 @@ Summary:	SGML-SPGroveBuilder perl module
 Summary(pl):	Modu³ perla SGML-SPGroveBuilder
 Name:		perl-SGML-SPGroveBuilder
 Version:	2.01
-Release:	1
+Release:	2
 License:	distributable
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -19,6 +19,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The SGML::SPGrove module links with James Clark's SGML Parser (SP)
 to load SGML, XML, and HTML document instances into SGML::Grove
 objects.
+
+%description -l pl
+Modu³ SGML::SPGrove linkuje siê z SP - parserem SGML Jamesa Clarka,
+aby wczytywaæ instancje dokumentów SGML, XML i HTML do obiektów
+SGML::Grove.
 
 %prep
 %setup -q -n SGML-SPGroveBuilder-%{version}
