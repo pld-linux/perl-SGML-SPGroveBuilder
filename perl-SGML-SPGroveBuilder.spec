@@ -20,14 +20,15 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl SGML::SPGroveBuilder
 Summary(zh_CN):	SGML::SPGroveBuilder Perl Ä£¿é
 Name:		perl-SGML-SPGroveBuilder
 Version:	2.01
-Release:	8
+Release:	9
 License:	BSD-like
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-opensp.patch
 Patch1:		%{name}-perl-5.6.patch
+BuildRequires:	gcc-c++
 BuildRequires:	perl-devel >= 5.6.1
-BuildRequires:	opensp-devel >= 1.5pre5
+BuildRequires:	opensp-devel >= 0:1.5pre5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,7 +46,8 @@ HTML do obiektów SGML::Grove.
 %patch1 -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -59,9 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING Changes ChangeLog README ToDo
-%{perl_sitearch}/SGML
-%dir %{perl_sitearch}/auto/SGML
-%dir %{perl_sitearch}/auto/SGML/SPGroveBuilder
-%{perl_sitearch}/auto/SGML/SPGroveBuilder/SPGroveBuilder.bs
-%attr(755,root,root) %{perl_sitearch}/auto/SGML/SPGroveBuilder/SPGroveBuilder.so
+%{perl_vendorarch}/SGML
+%dir %{perl_vendorarch}/auto/SGML
+%dir %{perl_vendorarch}/auto/SGML/SPGroveBuilder
+%{perl_vendorarch}/auto/SGML/SPGroveBuilder/SPGroveBuilder.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/SGML/SPGroveBuilder/SPGroveBuilder.so
 %{_mandir}/man3/*
