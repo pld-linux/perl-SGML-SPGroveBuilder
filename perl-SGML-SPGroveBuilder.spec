@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	SGML
-%define	pnam	SPGroveBuilder
+%define		pdir	SGML
+%define		pnam	SPGroveBuilder
 Summary:	SGML::SPGroveBuilder Perl module - load an SGML, XML, or HTML document
 Summary(pl):	Modu³ Perla SGML::SPGroveBuilder - wczytywanie dokumentów SGML, XML i HTML
 Name:		perl-SGML-SPGroveBuilder
