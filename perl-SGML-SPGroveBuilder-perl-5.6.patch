@@ -1,0 +1,49 @@
+--- SGML-SPGroveBuilder-2.01/SPGroveNew.cc~	Sun Jan 18 00:47:37 1998
++++ SGML-SPGroveBuilder-2.01/SPGroveNew.cc	Sun Apr 29 22:17:38 2001
+@@ -149,7 +149,7 @@
+   element[1] = newSVpv(as_string(event.gi), event.gi.len);
+ 
+   // Attributes
+-  HV *attributes = (HV*)&sv_undef;
++  HV *attributes = (HV*)&PL_sv_undef;
+   size_t nAttributes = event.nAttributes;
+ 
+   if (nAttributes > 0) {
+@@ -162,7 +162,7 @@
+ 	break;			// ignored
+       case Attribute::tokenized:
+ 	{
+-	  if (attributes == (HV*)&sv_undef) {
++	  if (attributes == (HV*)&PL_sv_undef) {
+ 	    attributes = newHV();
+ 	  }
+ 
+@@ -201,7 +201,7 @@
+ 	  const SGMLApplication::Attribute::CdataChunk *cdataChunk
+ 	    = att_ptr->cdataChunks;
+ 
+-	  if (attributes == (HV*)&sv_undef) {
++	  if (attributes == (HV*)&PL_sv_undef) {
+ 	    attributes = newHV();
+ 	  }
+ 
+@@ -248,8 +248,8 @@
+   }
+ 
+   // finish off adding the attributes to the element
+-  if (attributes == (HV*)&sv_undef) {
+-    element[2] = &sv_undef;
++  if (attributes == (HV*)&PL_sv_undef) {
++    element[2] = &PL_sv_undef;
+   } else {
+     element[2] = newRV_noinc((SV*)attributes);
+   }
+@@ -258,7 +258,7 @@
+   SV *element_ref = newRV_noinc((SV*)av_make(3, &element[0]));
+   SvREFCNT_dec (element[0]);
+   SvREFCNT_dec (element[1]);
+-  if (element[2] != &sv_undef) {
++  if (element[2] != &PL_sv_undef) {
+     SvREFCNT_dec (element[2]);
+   }
+   sv_bless (element_ref, element_stash_);

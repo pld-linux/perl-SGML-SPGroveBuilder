@@ -1,0 +1,19 @@
+--- SGML-SPGroveBuilder-2.01/Makefile.PL~	Sun Jan 18 00:47:37 1998
++++ SGML-SPGroveBuilder-2.01/Makefile.PL	Sun Apr 29 22:14:57 2001
+@@ -13,14 +13,12 @@
+     'NAME'	=> 'SGML::SPGroveBuilder',
+     'VERSION_FROM' => 'SPGroveBuilder.pm',
+ #    'LIBS'	=> ['-lsp'],
+-    'LIBS'	=> ['-L/home/ken/isrc/sp-1.2/lib -lsp'],
++    'LIBS'	=> ['-losp'],
+     'DEFINE'	=> '-DSP_MULTI_BYTE',
+ #    'INC'	=> '-I/usr/include/sp-1.2/lib'
+ #	      . ' -I/usr/include/sp-1.2/generic'
+ #	      . ' -I/usr/include/sp-1.2/include',
+-    'INC'	=> '-I/home/ken/isrc/sp-1.2/lib'
+-	      . ' -I/home/ken/isrc/sp-1.2/generic'
+-	      . ' -I/home/ken/isrc/sp-1.2/include',
++    'INC'	=> '-I/usr/include/OpenSP',
+     'OBJECT'    => "SPGroveBuilder.o SPGroveNew.o",
+     dist        => {'COMPRESS'  => 'gzip', 'SUFFIX'    => '.gz'},
+ );
