@@ -6,19 +6,24 @@ Version:	2.01
 Release:	2
 License:	distributable
 Group:		Development/Languages/Perl
+Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
 Group(de):	Entwicklung/Sprachen/Perl
+Group(es):	Desarrollo/Lenguajes/Perl
+Group(fr):	Development/Langues/Perl
+Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
+Group(pt):	Desenvolvimento/Linguagens/Perl
+Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/SGML/SGML-SPGroveBuilder-%{version}.tar.gz
-Patch0:		perl-SGML-SPGroveBuilder-opensp.patch
-Patch1:		perl-SGML-SPGroveBuilder-perl-5.6.patch
+Patch0:		%{name}-opensp.patch
+Patch1:		%{name}-perl-5.6.patch
 BuildRequires:	perl >= 5.005_03-10
 BuildRequires:	opensp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The SGML::SPGrove module links with James Clark's SGML Parser (SP)
-to load SGML, XML, and HTML document instances into SGML::Grove
-objects.
+The SGML::SPGrove module links with James Clark's SGML Parser (SP) to
+load SGML, XML, and HTML document instances into SGML::Grove objects.
 
 %description -l pl
 Modu³ SGML::SPGrove linkuje siê z SP - parserem SGML Jamesa Clarka,
