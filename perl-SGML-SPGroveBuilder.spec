@@ -20,10 +20,11 @@ Summary(uk):	Модуль для Perl SGML::SPGroveBuilder
 Summary(zh_CN):	SGML::SPGroveBuilder Perl дё©И
 Name:		perl-SGML-SPGroveBuilder
 Version:	2.01
-Release:	9
+Release:	10
 License:	BSD-like
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	5ecd47bf15af12b868c8260f21cd93cf
 Patch0:		%{name}-opensp.patch
 Patch1:		%{name}-perl-5.6.patch
 BuildRequires:	perl-devel >= 5.6.1
