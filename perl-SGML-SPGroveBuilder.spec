@@ -1,12 +1,27 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	SGML
-%define	pnam	SPGroveBuilder
-Summary:	SGML::SPGroveBuilder perl module
-Summary(pl):	Modu³ perla SGML::SPGroveBuilder
+%define		pdir	SGML
+%define		pnam	SPGroveBuilder
+Summary:	SGML::SPGroveBuilder Perl module
+Summary(cs):	Modul SGML::SPGroveBuilder pro Perl
+Summary(da):	Perlmodul SGML::SPGroveBuilder
+Summary(de):	SGML::SPGroveBuilder Perl Modul
+Summary(es):	Módulo de Perl SGML::SPGroveBuilder
+Summary(fr):	Module Perl SGML::SPGroveBuilder
+Summary(it):	Modulo di Perl SGML::SPGroveBuilder
+Summary(ja):	SGML::SPGroveBuilder Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	SGML::SPGroveBuilder ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul SGML::SPGroveBuilder
+Summary(pl):	Modu³ Perla SGML::SPGroveBuilder
+Summary(pt):	Módulo de Perl SGML::SPGroveBuilder
+Summary(pt_BR):	Módulo Perl SGML::SPGroveBuilder
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl SGML::SPGroveBuilder
+Summary(sv):	SGML::SPGroveBuilder Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl SGML::SPGroveBuilder
+Summary(zh_CN):	SGML::SPGroveBuilder Perl Ä£¿é
 Name:		perl-SGML-SPGroveBuilder
 Version:	2.01
-Release:	7
-License:	distributable
+Release:	8
+License:	BSD-like
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-opensp.patch
@@ -20,9 +35,9 @@ The SGML::SPGrove module links with James Clark's SGML Parser (SP) to
 load SGML, XML, and HTML document instances into SGML::Grove objects.
 
 %description -l pl
-Modu³ SGML::SPGrove linkuje siê z SP - parserem SGML Jamesa Clarka,
-aby wczytywaæ instancje dokumentów SGML, XML i HTML do obiektów
-SGML::Grove.
+Modu³ SGML::SPGrove jest konsolidowany z SP - parserem SGML Jamesa
+Clarka. Dziêki temu mo¿na wczytywaæ instancje dokumentów SGML, XML i
+HTML do obiektów SGML::Grove.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -38,15 +53,15 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes ChangeLog README ToDo
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%{perl_sitearch}/SGML/*.pm
+%doc COPYING Changes ChangeLog README ToDo
+%{perl_sitearch}/SGML
+%dir %{perl_sitearch}/auto/SGML
+%dir %{perl_sitearch}/auto/SGML/SPGroveBuilder
 %{perl_sitearch}/auto/SGML/SPGroveBuilder/SPGroveBuilder.bs
 %attr(755,root,root) %{perl_sitearch}/auto/SGML/SPGroveBuilder/SPGroveBuilder.so
 %{_mandir}/man3/*
