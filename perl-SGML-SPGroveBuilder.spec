@@ -29,7 +29,7 @@ Patch0:		%{name}-opensp.patch
 Patch1:		%{name}-perl-5.6.patch
 BuildRequires:	gcc-c++
 BuildRequires:	perl-devel >= 5.6.1
-BuildRequires:	opensp-devel >= 0:1.5pre5
+BuildRequires:	opensp-devel >= 2:1.5.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
