@@ -6,7 +6,7 @@
 %define		pdir	SGML
 %define		pnam	SPGroveBuilder
 Summary:	SGML::SPGroveBuilder Perl module - load an SGML, XML, or HTML document
-Summary(pl):	Modu≥ Perla SGML::SPGroveBuilder - wczytywanie dokumentÛw SGML, XML i HTML
+Summary(pl.UTF-8):   Modu≈Ç Perla SGML::SPGroveBuilder - wczytywanie dokument√≥w SGML, XML i HTML
 Name:		perl-SGML-SPGroveBuilder
 Version:	2.01
 Release:	11
@@ -26,9 +26,9 @@ SGML::SPGrove is a Perl 5 module for loading SGML, XML, and HTML
 document instances into SGML::Grove objects using SP - James Clark's
 SGML Parser.
 
-%description -l pl
-Modu≥ Perla SGML::SPGrove s≥uøy do wczytywania dokumentÛw SGML, XML
-oraz HTML do obiektÛw SGML::Grove, korzystaj±c z SP - parsera SGML
+%description -l pl.UTF-8
+Modu≈Ç Perla SGML::SPGrove s≈Çu≈ºy do wczytywania dokument√≥w SGML, XML
+oraz HTML do obiekt√≥w SGML::Grove, korzystajƒÖc z SP - parsera SGML
 Jamesa Clarka.
 
 %prep
