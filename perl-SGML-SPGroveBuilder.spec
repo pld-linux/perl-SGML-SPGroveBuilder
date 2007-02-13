@@ -6,7 +6,7 @@
 %define		pdir	SGML
 %define		pnam	SPGroveBuilder
 Summary:	SGML::SPGroveBuilder Perl module - load an SGML, XML, or HTML document
-Summary(pl.UTF-8):   Moduł Perla SGML::SPGroveBuilder - wczytywanie dokumentów SGML, XML i HTML
+Summary(pl.UTF-8):	Moduł Perla SGML::SPGroveBuilder - wczytywanie dokumentów SGML, XML i HTML
 Name:		perl-SGML-SPGroveBuilder
 Version:	2.01
 Release:	11
