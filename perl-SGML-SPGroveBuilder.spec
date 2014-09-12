@@ -58,6 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/SGML
 %dir %{perl_vendorarch}/auto/SGML
 %dir %{perl_vendorarch}/auto/SGML/SPGroveBuilder
-%{perl_vendorarch}/auto/SGML/SPGroveBuilder/SPGroveBuilder.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/SGML/SPGroveBuilder/SPGroveBuilder.so
 %{_mandir}/man3/*
