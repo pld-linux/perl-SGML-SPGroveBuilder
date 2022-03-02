@@ -1,0 +1,14 @@
+--- SGML-SPGroveBuilder-2.01/SPGroveNew.cc~	2022-03-02 07:39:53.000000000 +0100
++++ SGML-SPGroveBuilder-2.01/SPGroveNew.cc	2022-03-02 07:54:09.195341873 +0100
+@@ -14,11 +14,9 @@
+ #include "ParserEventGeneratorKit.h"
+ 
+ extern "C" {
+-#define explicit nexplicit
+ #include "EXTERN.h"
+ #include "perl.h"
+ #include "XSUB.h"
+-#undef explicit
+ 
+ SV *sp_grove_new (char *type, char *);
+ }
